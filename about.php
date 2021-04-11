@@ -132,6 +132,7 @@ and built statistical data products, I also build RF engineering
 dashboards and calculators such as RF power and noise budget tools for the
 receiver block chain such as the link in the RF section below.
 </p>
+<p>You can see my resume <a href="crudBasic/portfolio.php?profile_id=29">here</a>.</p>
 <h3>Communications and RF Electronics</h3>
 <p>
 My communication work includes radio architecture, antennas,

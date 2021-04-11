@@ -107,7 +107,7 @@ session_start();
   <li><a href="crudBasic/">Profile Database</a></li>
   <li><a href="rf-tools.php">RF Engineering Tools</a></li>
   <li><a href="machine-learning.php">Machine Learning</a></li>
-  <li><a href="crudBasic/portfolio.php?profile_id=29">About</a></li>
+  <li><a href="about.php">About</a></li>
 </ul>
 <!--<p class="center quad-space"><a class="anchor-button" href="crudBasic/">Go to database</a></p>-->
 <!-- end of a -->
