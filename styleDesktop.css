@@ -1,56 +1,53 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
     background-color: #FDF0D0;
 }
 div {
     position: relative;
     /*position: absolute;*/
-    box-sizing: border-box;
 }
 h1 {
     color: #008800;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    padding-top: 2px;
-    padding-bottom: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
 }
 h2 {
     color: #008800;
     font-size: 1.4em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 5px;
+    margin-top: 1.2em;
+    margin-bottom: 0.2em;
 }
 h3 {
     color: #008800;
-    margin-top: 20px;
-    padding-top: 2px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 5px;
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+}
+h4 {
+    margin-top: 0.8em;
+    margin-bottom: 0.1em;
+}
+h5 {
+    margin-top: 0.6em;
+    margin-bottom: 0.1em;
 }
 p {
     font-size: 1em;
-    padding-top: 1px;
-    padding-bottom: 0px;
-    padding-left: 1px;
-    padding-right: 1px;
     border: 0;
+    text-align: justify;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+.justify {
+    text-align: justify;
 }
 a {
     font-size: 1em;
     color: #0055FF;
     text-decoration: underline;
-    text-align: center;
+    /*text-align: center;*/
     padding-left: 2px;
     padding-top: 1px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 p a {
     font-size: 1em;
@@ -81,8 +78,8 @@ img {
 textarea {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.1em;
-    height: 110px;
-    width: 400px;
+    height: 110;
+    width: 400;
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 8px;
@@ -96,6 +93,12 @@ a:link {
 
 p a:link {
    color: blue;
+}
+
+li a:link {
+   color: blue;
+   padding-top: 8px;
+   padding-bottom: 8px;
 }
 
 /* visited link */
@@ -125,7 +128,7 @@ a:hover {
 }
 .small-bottom-pad {
     padding-bottom: 1px;
-    margin-bottom: 1px
+    margin-bottom: 1px;
 }
 .big {
     font-size: 1.2em;
@@ -150,17 +153,17 @@ a:hover {
     font-size: 1.2em;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 10;
 }
 .indent {
-    margin-left: 30px;
+    margin-left: 30;
 }
 .pad-left {
-    padding-left: 10px;
+    padding-left: 10;
     padding-right: 5px;
 }
 .button {
-    width: 120px;
+    width: 120;
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -171,14 +174,14 @@ a:hover {
     text-decoration: none;
 }
 .button-cancel {
-    width: 80px;
+    width: 80;
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 2px;
     padding-bottom: 2px;
     border: 1px solid #008800;
     background-color: #def;
-    margin-top: 10px;
+    margin-top: 10;
 }
 a.anchor-button {
     padding-left: 1rem;
@@ -202,7 +205,7 @@ a.anchor-button {
 }
 .button-small {
     font-size: 1.2em;
-    width: 30px;
+    width: 30;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 1px;
@@ -213,11 +216,11 @@ a.anchor-button {
 }
 .button-plus {
     font-size: 1.2em;
-    width: 30px;
+    width: 30;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-top: 8px;
     margin-bottom: 8px;
     border: 1px solid #008800;
@@ -226,20 +229,34 @@ a.anchor-button {
 }
 .button-css {
     font-size: 1.2em;
-    width: 80px;
+    width: 80;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     margin-top: 8px;
     margin-bottom: 8px;
     border: 1px solid #008800;
     background-color: #def;
     margin-top: 6px;
 }
+.button-css {
+    font-size: 1.2em;
+    width: 80;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border: 1px solid #008800;
+    background-color: #def;
+    margin-top: 6px;
+}
 .button-submit {
     font-size: 1.2em;
-    width: 80px;
+    width: 80;
     padding-left: 1px;
     padding-right: 1px;
     padding-top: 3px;
@@ -293,7 +310,7 @@ a.anchor-button {
 }
 .text-box {
     font-size: 1.1em;
-    width: 310px;
+    width: 310;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -305,7 +322,7 @@ a.anchor-button {
 }
 .year-entry-box {
     font-size: 1.1em;
-    width: 80px;
+    width: 80;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -317,12 +334,12 @@ a.anchor-button {
 }
 .headline-box {
     font-size: 1.1em;
-    width: 400px;
+    width: 400;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-right: 5px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 2px;
     margin-bottom: 8px;
     border: 1px solid #008800;
@@ -330,7 +347,7 @@ a.anchor-button {
 }
 .name-box {
     font-size: 1.1em;
-    width: 400px;
+    width: 400;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -339,7 +356,7 @@ a.anchor-button {
     background-color: #eef;
 }
 .name-box-small {
-    width: 120px;
+    width: 120;
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -350,7 +367,7 @@ a.anchor-button {
 }
 .year-entry-box {
     font-size: 1.1em;
-    width: 80px;
+    width: 80;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -361,11 +378,11 @@ a.anchor-button {
     background-color: #eef;
 }
 .email-box {
-    width: 520px;
+    width: 520;
 }
 .emale-entry-box {
     font-size: 1.1em;
-    width: 400px;
+    width: 400;
     padding-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -374,19 +391,19 @@ a.anchor-button {
     background-color: #eef;
     margin-bottom: 8px;
     margin-top: 8px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 .email {
     font-size: 1.1em;
     width: 325px;
-    padding-left: 10px;
+    padding-left: 10;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 2px;
     border: 1px solid #008800;
     background-color: #def;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-top: 10;
+    margin-bottom: 0;
 }
 .margin-bottom-small {
     margin-top: 24px;
@@ -399,14 +416,14 @@ a.anchor-button {
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 2px;
-    border: 1x solid #008800;
+    border: 1px solid #008800;
     background-color: #def;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 10;
 }
 .small-word-button {
     font-size: 1.1em;
-    width: 80px;
+    width: 80;
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -415,35 +432,16 @@ a.anchor-button {
     background-color: #def;
     margin-top: 15px;
 }
-#top_left {
-    position: absolute;
-    width: 15%;
-    top: 2%;
-    left: 2%;
-    color: #080;
-    background-color: #ffe;
-    border: 2px #080 solid;
-    padding: 6px
-}
 #one {
-  top: 5%;
+  top: 2%;
   left: 10%;
   width: 80%;
   height: 38%;
-  border: 0px orange solid;
+  border: 0 orange solid;
   padding-left: 1px;
   padding-right: 1px;
   padding-top: 2px;
   padding-bottom: 2px;
-}
-#top_right {
-    position: absolute;
-    width: 15%;
-    top: 2%;
-    right: 2%;
-    background-color: #ffe;
-    border: 2px #080 solid;
-    padding: 6px
 }
 #login_fails {
     top: 52%;
@@ -452,16 +450,15 @@ a.anchor-button {
 }
 #three {
     font-size: 1.1em;
-    border: 0px blue solid;
+    border: 0 blue solid;
     top: 35%;
     left: 10%;
     width: 80%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-
 #five {
     border: orange solid;
     top: 63%;
@@ -469,9 +466,9 @@ a.anchor-button {
     width: 15%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 #password {
     border: yellow solid;
@@ -480,9 +477,9 @@ a.anchor-button {
     width: 10%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 #select {
     border: yellow solid;
@@ -491,9 +488,9 @@ a.anchor-button {
     width: 32%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 #Play {
     border: orange solid;
@@ -502,9 +499,9 @@ a.anchor-button {
     width: 5%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 #login {
     text-font: 1.2em;
@@ -513,8 +510,8 @@ a.anchor-button {
     width: 30%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 #Logout {
     border: yellow solid;
@@ -523,9 +520,9 @@ a.anchor-button {
     width: 8%;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 #nine {
     top: 86%;
@@ -543,7 +540,7 @@ a.anchor-button {
     top: 3%;
     left: 25%;
     width: 50%;
-    border: 0px orange solid;
+    border: 0 orange solid;
     padding-left: 1px;
     padding-right: 1px;
     padding-top: 2px;
@@ -559,7 +556,7 @@ a.anchor-button {
 }
 #two {
     left: 25%;
-    border: 0px orange solid;
+    border: 0 orange solid;
     position: relative;
 }
 #position_fields {
@@ -585,23 +582,85 @@ a.anchor-button {
     margin: auto;
     display: block;
 }
+#top_left {
+    position: absolute;
+    width: 12%;
+    top: 1%;
+    left: 1px;
+    color: red;
+    background-color: #ffe;
+    border: 2px #080 solid;
+    padding: 16px;
+}
+#top_right {
+    position: absolute;
+    width: 12%;
+    top: 1%;
+    right: 1px;
+    background-color: #ffe;
+    border: 2px #080 solid;
+    padding: 16px;
+}
+#right2 {
+    position: absolute;
+    width: 12%;
+    top: 1%;
+    right: 1px;
+    background-color: #ffe;
+    border: 2px #080 solid;
+    padding: 16px;
+}
+#inline-blocks {
+    position: relative;
+    width: 100%;
+    font-size: 1.6em;
+    /*display: inline;*/
+    margin: auto;
+    top: 0;
+    left: 0%;
+    background-color: #ffe;
+    border: 0 red solid;
+    color: #080;
+}
+#datblock {
+    float: left;
+    top: 0;
+    width: 45%;
+    border: 0 solid #008800;
+    padding: 4px;
+}
+#time_div {
+    float: right;
+    text-align: right;
+    top: 0;
+    color: green;
+    width: 45%;
+    border: 0 solid #008800;
+    padding: 4px;
+}
 #main {
     /*display: flex;
     flex-direction: column;*/
+    position: absolute;
+    top: 1%;
+    left: 28%;
+    width: 68%;
+    margin: auto;
+    border: 0 orange solid;
+}
+#section1 {
+    position: relative;
     top: 0%;
-    left: 12%;
-    width: 76%;
-    border: 0px orange solid;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    left: 0%;
+    width: 100%;
+    margin: 0;
+    border: 0 blue solid;
 }
 #a {
     top: 0%;
     left: 12%;
     width: 76%;
-    border: 0px orange solid;
+    border: 0 orange solid;
     padding-left: 1px;
     padding-right: 1px;
     padding-top: 2px;
@@ -610,39 +669,33 @@ a.anchor-button {
 /*#a {order: 1}
 #map {order: 2}*/
 #map {
-          /*position: relative;
-          position: absolute;
-          top: 35%;*/
-          left: 20%;
-          height: 400px;
-          width: 60%;
-          max-width: none;
-          padding: 0px;
-          border: 2px solid #008800;
+    position: relative;
+    left: 0%;
+    height: 400;
+    width: 100%;
+    max-width: none;
 }
 #map img {
    max-width: none;
 }
-#map_canvas img {
+/*#map_canvas img {
    max-width: none;
    max-height: none;
-   left: 20%;
-   height: 50%;
-   width: 70%;
-   padding: 0px;
-   border: 5px solid blue;
-}
+   padding: 0;
+   border: 2px solid blue;
+}*/
 .map_canvas {
    max-width: none;
+   border: 2px solid blue;
 }
 .gmnoprint img {
     max-width: none;
 }
 table {
       border-collapse: collapse;
-      cell-spacing: 0px;
+      cell-spacing: 0;
       padding-left: 8px;
-      padding-right 8px;
+      padding-right: 8px;
       padding-top: 3px;
       padding-bottom: 3px;
       margin: 1px;
@@ -651,9 +704,9 @@ table {
 }
 .tablePosition {
       border-collapse: collapse;
-      cell-spacing: 0px;
+      cell-spacing: 0;
       padding-left: 5px;
-      padding-right 5px;
+      padding-right: 5px;
       padding-top: 2px;
       padding-bottom: 2px;
       margin: auto;
@@ -668,8 +721,8 @@ th {
     padding-top: 3px;
     padding-bottom: 3px;
     background-color: #BBDDEE;
-    border-spacing: 0px;
-    cell-spacing: 0px;
+    border-spacing: 0;
+    cell-spacing: 0;
     border: 2px solid #008800;
 }
 td {
@@ -678,35 +731,26 @@ td {
     padding-right: 8px;
     padding-top: 3px;
     padding-bottom: 3px;
-    cell-spacing: 0px;
+    cell-spacing: 0;
     border: 1px solid #008800;
-    border-spacing: 0px;
-    background-color: #EEEEFF;
-}
-.td-narrowcol {
-    font-size: 1.1em;
-    width: 180px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    cell-spacing: 0px;
-    border: 2px solid #008800;
+    border-spacing: 0;
     background-color: #EEEEFF;
 }
 tr {
     line-height: 2.1em;
 }
 ul {
-    padding-top: 2px;
-    padding-bottom: 0px;
-    padding-left: 40px;
-    padding-right: 1px;
+    padding: 0px;
+    /*background-color: #dec9a2;*/
+}
+ol {
+    margin-top: 5px;
+    padding-bottom: 0;
+    padding-left: 1.3em;
+    padding-right: 0;
+    background-color: #dec9a2;
 }
 li {
-    font-size: 1.2em;
-    padding-top: 4px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 1px;
+    font-size: 1em;
+    padding: 0px;
 }

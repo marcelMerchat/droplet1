@@ -29,9 +29,9 @@ session_start();
       }
       nav li {
         vertical-align: middle;
-        padding-left: 0;
+        padding-left: 0px;
         float: left;
-        padding-right: 0;
+        padding-right: 0px;
         padding-top: 2px;
         padding-bottom: 2px;
       }
@@ -53,14 +53,21 @@ session_start();
       }
       .nav2 {
       }
+      /* li.navdate {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: #004400;
+      }
+      .navtime {
+        color: #004400;
+      } */
+      /* Vertical Navigation Bar */
       ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
           width: 25%;
           background-color: #f1f1f1;
-          background-color: #dec9a2;
-          border: 2px green solid;
           position: fixed;
           height: 100%;
           overflow: auto;
@@ -91,7 +98,10 @@ session_start();
     <link type="text/css" rel="stylesheet" href="navbar.css">
     <script>
     /*
-        My comment
+        Multi-line comment
+        Purpose: Illustrate basic JavaScript commands
+        Date: February 14, 2018
+        Version 1.0.0
     */
         function printToday(){
             var today = new Date();
@@ -102,51 +112,44 @@ session_start();
     <script type="text/javascript" charset="utf-8">google.load("maps","2.x"); google.load("jquery","1.3.1");</script>
 </head>
 <body>
+<script>
+    document.write('<nav id="nav1">');
+        document.write('<ul>');
+            document.write('<li><a href="crudBasic/" class="back">&#8656; Go to Database App</a></li>');
+            document.write('<li <a href="links.html" class="back2">links.html</li>');
+
+            document.write('<li><a href="crudBasic/" class="forward">Go to Database App &#8658;</a></li>');
+        document.write('</ul>');
+    document.write('</nav>');
+</script>
+
 <ul>
-  <li><a class="active" href="index.php">Home</a></li>
-  <li><a href="crudBasic/">Profile Database</a></li>
-  <li><a href="rf-tools.php">RF Engineering Tools</a></li>
-  <li><a href="machine-learning.php">Machine Learning</a></li>
-  <li><a href="crudBasic/portfolio.php?profile_id=29">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
 </ul>
+
 <!--<p class="center quad-space"><a class="anchor-button" href="crudBasic/">Go to database</a></p>-->
 <!-- end of a -->
 <div id="main">
-  <div id="section1">
+  <div id="top_right">
+    <p>All you need in this life is ignorance and confidence,
+    and then success is sure. - Mark Twain</p>
 
+    <br>
+      <p>
+
+      When one door is closed, don't you know that many more are open.
+           ― Bob Marley</p>
+  </div>
   <h2 class="center">Welcome to Marcel Merchat's Website</h2>
   <h3 class="center">RF Electronic Engineer and Data Scientist</h3>
-  <h4 class="center">Machine-Learning and other Data Products</h4>
   <h4 class="center">Website and Database -- Development and Modeling</h4>
+  <h4 class="center">Machine-Learning and other Data Products</h4>
   <h4 class="center">On-Line Analysis and Engineering Tools and Calculators</h4>
-  <h4 class="center">Chicago, Illinois</h4>
-
-  <h3>Machine Learning</h3>
-  <p>Modern computers bring us powerful machine-learning tools for analyzing
-     data and making estimations, predictions, and even automated decisions.
-     However, predictions are only valuable if we know their accuracy and can
-     compare learning methods to choose the best one. Thus an understanding
-     of data, statistics, and probablity as well as the variable
-     cost of an unknown outcome is a prerequisite for using machine-learning in
-     a responsible way. There are links to
-     <a href="machine-learning.php">machine-learning</a> studies
-     for predicting
-     <a href="http://www.rpubs.com/marcelMerchat/304554" target="_blank">
-       electrical power reliability</a>,
-     <a href="http://rpubs.com/marcelMerchat/244844" target="_blank">cancer
-       health conditions</a>, and
-     <a href="http://rpubs.com/marcelMerchat/244844" target="_blank">dry weather in June</a>
-     on the left sidebar under machine-learning.
-  </p>
-
-  <h3>CRUD Database</h3>
-  <p>The database website is a multipage website for a MySQL database.
-       Separate linked pages are provided to create (C) data records, read (R)
-       existing ones, update (U), and Delete (D) records (CRUD). You can login
-       to the database application <a href="crudBasic/" target="_blank">here.</a>
-  </p>
-
-</div> <!-- section1 -->
+  <p class="center">Chicago, Illinois</p>
+</div> <!-- end of main -->
 <div id="inline-blocks">
     <div id="datblock">
         <script>
@@ -180,7 +183,6 @@ session_start();
       </script>
 </div> <!-- end of inline blocks for date and time-->
 <div id="map" class="map_canvas"></div>
-</div> <!-- End of Main -->
 <script>
 var uluru =  {lat: 41.8892, lng: -87.618};
 //var uluru = {lat: -25.363, lng: 131.044};
@@ -191,7 +193,7 @@ var locations = [
     ['Gramps', 41.9912, -87.6541 , 1]
 ];
 function initMap(){
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 2,
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 15,
           center: uluru,
           scaleControl: true,
           mapTypeControl: true,
@@ -227,7 +229,8 @@ function initMap(){
 <script>
 $(document).ready(function() {
       window.console && console.log('Document ready called');
-      $('#section1').insertBefore('#inline-blocks');
+      $('#nav1').insertBefore('#main');
+      $('#main').insertBefore('#inline-blocks');
       $('#inline-blocks').insertBefore('#map');
       //$(function() {
       //    $('body').hide().fadeIn(3000);
