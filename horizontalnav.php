@@ -108,7 +108,7 @@ session_start();
             document.write(today.toDateString());
         }
     </script>
-    <script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyATB2C726oPKkTfJd9MAnlEhglyvKe9Oaw">
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=">
     <script type="text/javascript" charset="utf-8">google.load("maps","2.x"); google.load("jquery","1.3.1");</script>
 </head>
 <body>
